@@ -31,7 +31,7 @@ h1
     display: flex;
     justify-content: end;
 }
-.social-links ul
+.social-links svg
 {
     display: flex;
     list-style: none;
@@ -60,6 +60,7 @@ h1
     border:none;
     border-right-style:groove;
     border-left-style:groove;
+    color: #000000;
 }
 button:hover
 {
