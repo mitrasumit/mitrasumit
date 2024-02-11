@@ -1,3 +1,10 @@
+body
+{
+    padding: 5px;
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    background: #ecf3f3;
+}
 h1
 {
     font-size: 50px;
@@ -10,16 +17,19 @@ h1
 }
 .heading
 {
-    margin-top:15vh;
+    margin-top:10vh;
     text-align: center;
-    margin-bottom:10vh
+    margin-bottom:10vh;
+}
+.sub-heading
+{
+    max-width: 80%;
+    margin:auto;
 }
 .social-links
 {
     display: flex;
     justify-content: end;
-    margin-top:3vh;
-    margin-right: 5vw;
 }
 .social-links ul
 {
@@ -27,16 +37,67 @@ h1
     list-style: none;
     gap:3vw;
 }
-.programming-languages-logo ul
+.programming-languages-logo
 {
-    padding:0;
-    list-style-type: none;
+    word-spacing: 5vw;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+.nav
+{
+    padding-top:15vh;
     display: flex;
-    justify-content:center;
-    gap:3vw;
+    justify-content: center;
     flex-wrap: wrap;
 }
-.programming-languages-logo ul li
+.nav button
 {
-   
+    min-width: calc(100%/4);
+    max-width: calc(100%/4);
+    font-size: 20px;
+    background:none;
+    margin:0px;
+    border:none;
+    border-right-style:groove;
+    border-left-style:groove;
+}
+button:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:630px) 
+{
+    .heading
+    {
+        margin-bottom: 5vh;
+    }
+    .programming-languages-logo
+    {
+        display:flex;
+        justify-content: center;
+        flex-basis: 33.3333%;
+        flex-wrap: wrap;
+    }
+    .programming-languages-logo svg
+    {
+        padding:1vh 0 1vh 0;
+        width: 55px;
+        height: 55px;
+        flex-basis: 33.3333%;
+        
+    }
+    .nav
+    {
+        padding-top:5vh;
+    }
+    .nav button
+    {
+        min-width: unset;
+        max-width: unset;
+        margin-top:10px;
+        text-align: center;
+        flex-basis: calc(100% / 2);
+    }
 }
