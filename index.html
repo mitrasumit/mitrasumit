@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <div class="container particle-container">
+    <div class="container">
         <div class="background-animation">
         <div class="particle"></div>
         <div class="particle"></div>
@@ -137,14 +137,24 @@
         <div class="projects-page" style="display: none;"></div>
         <div class="certifications-page" style="display: none;"></div>
         <div class="testimonials-page" style="display: none;"></div>
+        </div>
         <div class="nav">
-            <button id="experience_page" onclick="toggle()">Professional Experience</button>
-            <button onclick="toggle()">Projects</button>
-            <button onclick="toggle()">Certifications</button>
-            <button onclick="toggle()">Testimonials</button>             
+            <button id="professional_page" onclick="togglePage()">Experience</button>
+            <button onclick="togglePage()">Skills</button>
+            <button onclick="togglePage()">Certifications</button>
+            <button onclick="togglePage()">Testimonials</button>             
     </div>
     </div>
 
-    <script src="scripts.js"/>
+    <script>
+        var landing_page=document.getElementsByClassName("landing-page")[0];
+
+        function togglePage() {
+            if(landing_page.style.visibility!='hidden')
+            {
+                landing_page.style.visibility='hidden'
+            }
+        };
+    </script>
 </body>
 </html>
